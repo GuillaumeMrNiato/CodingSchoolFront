@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dépôt de rendu — Coding School | NEOMA Business School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="maintenance-banner" id="maintenance-banner" role="status">
+        🔧 La plateforme est actuellement en maintenance. Certaines fonctionnalités peuvent être indisponibles. Merci de votre compréhension.
+        <button class="banner-close" id="banner-close" aria-label="Fermer la bannière">✕</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h2 onclick="window.location.href='index.html'">Coding School</h2></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li><li><a href="dashboard.html">Mon espace</a></li><li><a href="depot.html">Dépôt de rendu</a></li><li><a href="ateliers.html">Ateliers NEOSmart</a></li><li><a href="login.html" class="btn-outline">Déconnexion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <form class="form-card" id="depot-form" novalidate>
+                <h1>Dépôt de rendu de projet</h1>
+                <p class="form-subtitle">Déposez votre projet pour correction par un professeur.</p>
+
+                <div class="alert alert-success" id="depot-success" role="status"></div>
+                <div class="alert alert-danger" id="depot-error" role="alert"></div>
+
+                <div class="form-group" id="group-projet">
+                    <label for="projet">Projet</label>
+                    <select id="projet" name="projet" required>
+                        <option value="">— Choisissez un projet —</option>
+                        <option value="site-vitrine">Site vitrine HTML/CSS</option>
+                        <option value="mini-jeu-js">Mini-jeu JavaScript</option>
+                        <option value="dashboard-python">Dashboard Python</option>
+                    </select>
+                    <p class="error">Veuillez sélectionner un projet.</p>
+                </div>
+
+                <div class="form-group" id="group-fichier">
+                    <label for="fichier">Fichier du rendu (zip, pdf, lien Git…)</label>
+                    <input type="file" id="fichier" name="fichier" required>
+                    <p class="error">Veuillez joindre un fichier de rendu.</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Décrivez brièvement votre rendu…"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Déposer mon rendu</button>
+                    <a href="dashboard.html" class="form-link">Retour à mon espace</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Coding School — NEOMA Business School · Contact : codingschool@neoma-bs.fr</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

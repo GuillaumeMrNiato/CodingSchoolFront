@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliers NEOSmart — Coding School | NEOMA Business School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="maintenance-banner" id="maintenance-banner" role="status">
+        🔧 La plateforme est actuellement en maintenance. Certaines fonctionnalités peuvent être indisponibles. Merci de votre compréhension.
+        <button class="banner-close" id="banner-close" aria-label="Fermer la bannière">✕</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h2 onclick="window.location.href='index.html'">Coding School</h2></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li><li><a href="dashboard.html">Mon espace</a></li><li><a href="ateliers.html">Ateliers NEOSmart</a></li><li><a href="login.html" class="btn-outline">Connexion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h1 class="section-title">Ateliers NEOSmart</h1>
+
+                <div class="alert alert-success" id="reservation-success" role="status"></div>
+
+                <div class="ateliers-grid">
+                    <div class="atelier-card">
+                        <h3>Atelier Python — Data</h3>
+                        <p>Jeudi 20 novembre 2026 · 14h00 – 16h00 · Campus de Reims</p>
+                        <p style="margin:1rem 0;"><button class="btn-primary reserve-btn" data-atelier="Atelier Python — Data">Réserver</button></p>
+                    </div>
+                    <div class="atelier-card">
+                        <h3>Atelier JavaScript — Web</h3>
+                        <p>Mardi 25 novembre 2026 · 10h00 – 12h00 · Campus de Paris</p>
+                        <p style="margin:1rem 0;"><button class="btn-primary reserve-btn" data-atelier="Atelier JavaScript — Web">Réserver</button></p>
+                    </div>
+                    <div class="atelier-card">
+                        <h3>Atelier Excel Mastery</h3>
+                        <p>Mercredi 26 novembre 2026 · 9h00 – 11h00 · Campus de Rouen</p>
+                        <p style="margin:1rem 0;"><button class="btn-primary reserve-btn" data-atelier="Atelier Excel Mastery">Réserver</button></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Coding School — NEOMA Business School · Contact : codingschool@neoma-bs.fr</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

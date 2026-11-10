@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion — Coding School | NEOMA Business School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="maintenance-banner" id="maintenance-banner" role="status">
+        🔧 La plateforme est actuellement en maintenance. Certaines fonctionnalités peuvent être indisponibles. Merci de votre compréhension.
+        <button class="banner-close" id="banner-close" aria-label="Fermer la bannière">✕</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h2 onclick="window.location.href='index.html'">Coding School</h2></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li><li><a href="ateliers.html">Ateliers NEOSmart</a></li><li><a href="login.html" class="btn-outline">Connexion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <form class="form-card" id="login-form" novalidate>
+                <h1>Connexion</h1>
+                <p class="form-subtitle">Connectez-vous avec votre compte NEOMA Business School.</p>
+
+                <div class="alert alert-danger" id="login-error" role="alert"></div>
+
+                <div class="form-group" id="group-email">
+                    <label for="email">Identifiant (e-mail institutionnel)</label>
+                    <input type="email" id="email" name="email" placeholder="prenom.nom@neoma-bs.com" autocomplete="username" required>
+                    <p class="hint">Votre adresse e-mail NEOMA (domaine @neoma-bs.com).</p>
+                    <p class="error">Veuillez saisir une adresse e-mail institutionnelle valide (@neoma-bs.com).</p>
+                </div>
+
+                <div class="form-group" id="group-password">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" autocomplete="current-password" required>
+                    <p class="error">Le mot de passe est obligatoire.</p>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Se connecter</button>
+                    <a href="#" class="form-link" id="forgot-password">Mot de passe oublié ?</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Coding School — NEOMA Business School · Contact : codingschool@neoma-bs.fr</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
